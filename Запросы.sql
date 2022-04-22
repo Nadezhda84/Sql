@@ -1,4 +1,4 @@
-/*Создание базы данных "Одежда"*/
+/*Creating a database "Clothes"*/
 CREATE TABLE clothes (
  
 id INT NOT NULL AUTO_INCREMENT, 
@@ -9,12 +9,12 @@ PRIMARY KEY (id));
 
 
 
-/*Вывод всей БД "Одежда"*/
+/*Output of the database "Clothes"*/
 SELECT * FROM clothes;
 
 
 
-/*Заполнение БД */
+/*Filling the database */
 INSERT INTO clothes (clothescol) VALUES ('Рубашка');
 
 INSERT INTO clothes (clothescol) VALUES ('Футболка');
@@ -33,20 +33,20 @@ INSERT INTO clothes (clothescol) VALUES ('Пиджак');
 
 
 
-/*Вывести часть БД, где id > 3. Ограничить тремя строками*/ 
+/*Display the part of the database where id > 3. Limit to three lines*/ 
 SELECT * FROM clothes WHERE id > 3 LIMIT 3;
 
 
 
-/*Обновление БД, где id = 6*/
+/*Update database where id = 6*/
 UPDATE clothes SET clothescol = 'Копроновые колготки' WHERE id = 6;
 
 
 
-/*Удаление части БД, где id > 7*/
+/*Deleting part of the database where id > 7*/
 DELETE FROM clothes WHERE id > 7;
 
 
 
-/*Вывести БД в отсортированном по убыванию по id виде*/
+/*Display the database sorted in descending order by id*/
 SELECT * FROM clothes ORDER BY id DESC;
